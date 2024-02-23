@@ -1,0 +1,41 @@
+/* Red Rectangle */
+.flag {
+    width: 900px;
+    height: 600px;
+    background-color: #ce1126;
+    position: relative;
+}
+
+/* Blue Rectangle */
+.flag>div {
+    background-color: #002868;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    /* Total flag height 600px and Remain 300px. So if we use 300px/2 = 150px top/bottom the rectangle move perfectly in the middle */
+}
+
+/* Circle */
+.flag>div>div {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    /* Circle is 100px and the height is 300px. So if we use 50px top/bottom the circle move perfectly in the middle */
+    left: 350px;
+}
+
+p {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.flag>div div p {
+    color: black;
+}
